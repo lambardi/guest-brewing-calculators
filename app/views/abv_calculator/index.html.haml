@@ -1,0 +1,8 @@
+.calculator-area
+  = form_for :abv do |f|
+    = field_set_tag 'A.B.V. Calculator' do
+      = f.label :og, 'Original Gravity:'
+      = f.text_field(:og, :class => "abv-input")
+      = f.label :fg, "Final Gravity:"
+      = f.text_field(:fg, :class => "abv-input")
+      = f.submit("Calculate ABV", :class => "button abv-button")

@@ -1,0 +1,15 @@
+.calculator-area
+  %form
+    %fieldset
+      %legend A.B.V. Results
+      %label
+        Original Gravity:
+        %input{:readonly => "readonly", :value => "#{@abv.og}", :type => "text"} 
+      %label
+        Final Gravity:
+        %input{:readonly => "readonly", :value => "#{@abv.fg}", :type => "text"} 
+      %label
+        %strong
+          A.B.V.
+          %input{:readonly => "readonly", :value => "#{@abv.abv}", :type => "text"} 
+          
